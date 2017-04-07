@@ -27,16 +27,6 @@ class CodeJam(object):
             self.output_file = sys.argv[2]
         self.solver_fn = func
 
-    def solver(self, fn):
-        """
-
-        :param fn:
-        :return:
-        """
-        def wrapper(*args):
-            self.solver_fn = fn
-            return fn
-        return wrapper
 
     def run(self):
         with open(self.input_file, 'r') as infile:
