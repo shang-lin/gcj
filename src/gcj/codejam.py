@@ -7,7 +7,7 @@ from .utils import CodeJamUtils
 class CodeJam(object):
 
     def __init__(self, func):
-        """ Opens handles to the input file and output file. """
+        """ Sets the solver function and the input and output file names. """
 
         if len(sys.argv) < 2:
             print("Input file not specified.")
